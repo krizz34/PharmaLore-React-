@@ -35,7 +35,7 @@ const Navbar = () => {
    }
    else{
     return (
-      <nav className="navbar navbar-expand-lg navbar-light bg-white customNavbar" style={{ maxWidth: '695px', margin: '0 auto', borderRadius: '30px' }}>
+      <nav className="navbar navbar-expand-lg navbar-light bg-white customNavbar" style={{ maxWidth: '573px', margin: '0 auto', borderRadius: '30px' }}>
         <NavLink to="/" className={'navbar-brand'+(({isActive})=>(isActive?'active':''))}>
           <img src={logo} alt="logo of PharamLore" className="img-fluid customNavBrand" style={{ maxHeight: '25px', marginTop: '-6px' }} />
         </NavLink>
@@ -56,19 +56,13 @@ const Navbar = () => {
               </NavLink>
             </li>
             <li className="nav-item">
-              {/* <a className="nav-link font-weight-bold customNavItem" href="/" style={{ color: '#531251' }}>
-  
-              </a> */}
               <NavLink to={"/aboutus"} className={ 'nav-link font-weight-bold customNavItem'+(status => status.isActive ? 'active' : '')} style={{ color: '#531251' }}>
                       About us
               </NavLink>
             </li>
-            <li className="nav-item">
-              <NavLink to={"/DefaultCRUD"} className={ 'nav-link font-weight-bold customNavItem'+(status => status.isActive ? 'active' : '')} style={{ color: '#531251' }}>
-                      DefaultCRUD
-              </NavLink>
-              {/* <a className="nav-link font-weight-bold customNavItem" href="/" style={{ color: '#531251' }}>Contact Us</a> */}
-            </li>
+            {/* <li className="nav-item">
+              <a className="nav-link font-weight-bold customNavItem" href="/" style={{ color: '#531251' }}>Contact Us</a>
+            </li> */}
   
             
   
@@ -103,17 +97,6 @@ const Navbar = () => {
                 </>
   }
   
-  
-  
-  
-  
-                {/* <a className="dropdown-item" href="/">
-                <NavLink to={"/login"} className={'nav-link'} >
-                      Login
-                  </NavLink>
-                </a>
-                <div className="dropdown-divider"></div>
-                <a className="dropdown-item" href="/">Logout</a> */}
               </div>
             </li>
           </ul>
