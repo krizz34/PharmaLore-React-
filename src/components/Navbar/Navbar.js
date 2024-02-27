@@ -45,17 +45,17 @@ const Navbar = () => {
   
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav ">
-            <li className="nav-item">
+            <li className="nav-item customNavItem">
               <NavLink to={"/readAPI"} className={ 'nav-link font-weight-bold customNavItem'+(status => status.isActive ? 'active' : '')} style={{ color: '#531251' }}>
                   Medicines
               </NavLink>
             </li>
-            <li className="nav-item">
+            <li className="nav-item customNavItem">
               <NavLink to={"/createAPI"} className={ 'nav-link font-weight-bold customNavItem'+(status => status.isActive ? 'active' : '')} style={{ color: '#531251' }}>
                   Add New Medicine
               </NavLink>
             </li>
-            <li className="nav-item">
+            <li className="nav-item customNavItem">
               <NavLink to={"/aboutus"} className={ 'nav-link font-weight-bold customNavItem'+(status => status.isActive ? 'active' : '')} style={{ color: '#531251' }}>
                       About us
               </NavLink>
